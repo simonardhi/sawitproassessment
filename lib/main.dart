@@ -242,23 +242,30 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
           .toString();
       var destinationAddress = response.data['destination_addresses'][0];
       var originAddresses = response.data['origin_addresses'][0];
-      print(destinationAddress);
-      print(originAddresses);
       duration = response.data['rows'][0]['elements'][0]['duration']['text']
           .toString();
       totalDistance = double.parse(tempDistance) / 1000;
-      FirebaseFirestore.instance.collection('data').add({
+      FirebaseFirestore.instance.collection('test').add({
+        'destination_address': destinationAddress,
+        'origin_address': originAddresses,
         'distance': tempDistance,
         'duration': duration,
         'latitude': position.latitude.toString(),
         'longitude': position.longitude.toString(),
-        'ocr': recognizedText.text
+        'ocr_result': recognizedText.text
       });
       String message =
           'My location (Longitude: ${position.longitude} / Latitude: ${position.latitude}),\n\nDistance My location to Plaza Indonesia: $totalDistance km\nTravel Duration : $duration\n\nOCR Result:\n${recognizedText.text}';
       await navigator.push(
         MaterialPageRoute(
-          builder: (BuildContext context) => DisplayScreen(text: message),
+          builder: (BuildContext context) => DisplayScreen(
+              destinationAddress: destinationAddress,
+              originAddress: originAddresses,
+              distance: tempDistance,
+              duration: duration,
+              latitude: position.latitude.toString(),
+              longitude: position.longitude.toString(),
+              ocrResult: recognizedText.text),
         ),
       );
     } catch (e) {
