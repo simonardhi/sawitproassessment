@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "20913898706",
+    "project_id": "sawit-pro-ea577",
+    "storage_bucket": "sawit-pro-ea577.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20913898706:android:79a510540f139d7145190b",
+        "android_client_info": {
+          "package_name": "com.example.sawitpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20913898706-qtci9e7j2cu7derbs51c2fhed70897fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD89EcTMBcrG1c47wuf0furGOXfohcVhFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20913898706-qtci9e7j2cu7derbs51c2fhed70897fk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "20913898706-bc2m3v8s49m5hl6d0gdqk8pvhe7t9h3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sawitpro"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20913898706:android:dcb5d25f22c2139845190b",
+        "android_client_info": {
+          "package_name": "com.example.sawitproassessment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20913898706-qtci9e7j2cu7derbs51c2fhed70897fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD89EcTMBcrG1c47wuf0furGOXfohcVhFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20913898706-qtci9e7j2cu7derbs51c2fhed70897fk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "20913898706-bc2m3v8s49m5hl6d0gdqk8pvhe7t9h3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sawitpro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
